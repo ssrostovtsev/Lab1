@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetinaScreen.cs" />
     <Compile Include="ScreenBase.cs" />
+    <Compile Include="ScreenContent.cs" />
     <Compile Include="SimCorpMobile.cs" />
   </ItemGroup>
   <ItemGroup>

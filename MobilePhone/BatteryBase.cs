@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobilePhone {
+﻿namespace MobilePhone {
     public abstract class BatteryBase {
         public BatteryBase() { }
         public BatteryBase(int capacity, double voltage, int chargeLevel) {
@@ -15,6 +9,5 @@ namespace MobilePhone {
         public int Capacity { get; set; }
         public double Voltage { get; set; }
         public int ChargeLevel { get; set; }
-        
     }
 }

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobilePhone {
-    public class SimCorpMobile : Mobile{
-        public override ScreenBase Screen { get { return vOLEDScreen; } }
-        private readonly OLEDScreen vOLEDScreen = new OLEDScreen(768,1024);
-        public override BatteryBase Battery { get { return vLiPoBattery; } }
-        private readonly LiPoBattery vLiPoBattery = new LiPoBattery(4100,3.7,83);
-        public override CPUBase CPU { get { return vMultiCoreCPU; } }
-        private readonly MultiCoreCPU vMultiCoreCPU = new MultiCoreCPU("SnapDragon", 2.1, 2);
+﻿namespace MobilePhone {
+    public class SimCorpMobile : Mobile {
+        public SimCorpMobile(ScreenBase screen, BatteryBase battery, CPUBase cpu) : base(screen, battery, cpu) {
+            this.Screen = screen;
+            this.Battery = battery;
+            this.CPU = cpu;
+        }
+        public override ScreenBase Screen { get; set; }
+        public override BatteryBase Battery { get; set; }
+        public override CPUBase CPU { get; set; }
     }
 }
