@@ -7,14 +7,11 @@ namespace MobilePhone {
             LiPoBattery liPoBattery = new LiPoBattery(4100, 3.7, 83);
             MultiCoreCPU multiCoreCPU = new MultiCoreCPU("SnapDragon", 2.1, 2);
             SimCorpMobile scmobile = new SimCorpMobile(OLEDScreen, liPoBattery, multiCoreCPU);
-            Console.WriteLine(scmobile.Description());
-            ScreenContent screenContent = new ScreenContent("***Screen content data***");
-            scmobile.Screen.Show(screenContent);
-            Console.WriteLine();
-            ///without calling Description
-            Console.WriteLine(scmobile.Screen.ToString());
-            Console.WriteLine(scmobile.Battery.ToString());
-            Console.WriteLine(scmobile.CPU.ToString());
+            ConsoleOutput consoleOutput = new ConsoleOutput();
+            scmobile.PlaybackComponent = new iPhoneHeadset(consoleOutput);
+            scmobile.Play("My Song");
+            scmobile.ChargeComponent = new WirelessCharger(consoleOutput);
+            scmobile.Charge(5.0, 1.0);
             Console.ReadKey();
         }
     }
