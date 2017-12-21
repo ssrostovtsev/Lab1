@@ -12,7 +12,7 @@ namespace MobilePhoneTests {
             double amperage = 1;
             FakeOutput fakeOutput = new FakeOutput();
             WirelessCharger wirelessCharger = new WirelessCharger(fakeOutput);
-            string expectedWriteLineResult = "WirelessCharger wireless charge ("+voltage+" V, "+amperage+" A)";
+            string expectedWriteLineResult = "WirelessCharger wireless charge (5 V, 1 A)";
             //Act
             wirelessCharger.Charge(voltage, amperage);
             string writeLinedResult = fakeOutput.WriteLineResult;

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobilePhoneClassLib {
+﻿namespace MobilePhoneClassLib {
     public class SMSProvider {
-
+        public delegate void SMSRecievedDelegate(string message);
+        public event SMSRecievedDelegate SMSRecieved;
     }
 }

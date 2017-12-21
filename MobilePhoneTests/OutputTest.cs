@@ -12,7 +12,7 @@ namespace MobilePhoneTests {
             FakeOutput fakeOutput = new FakeOutput();
             iPhoneHeadset iPHeadset = new iPhoneHeadset(fakeOutput);
             string songName = "Test Artist - Test Song";
-            string expectedWriteLineResult = "iPhoneHeadset sound: " + songName;
+            string expectedWriteLineResult = "iPhoneHeadset sound: Test Artist - Test Song";
             //Act
             iPHeadset.Play(songName);
             string writeLinedResult = fakeOutput.WriteLineResult;
