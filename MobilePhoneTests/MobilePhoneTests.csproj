@@ -54,8 +54,11 @@
   <ItemGroup>
     <Compile Include="ChargerTest.cs" />
     <Compile Include="FakeOutput.cs" />
+    <Compile Include="FakeShowSMS.cs" />
     <Compile Include="OutputTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSEventTest.cs" />
+    <Compile Include="SMSFormatTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MobileFormWinForm\MobileFormWinForm.csproj">
@@ -65,6 +68,10 @@
     <ProjectReference Include="..\MobilePhoneClassLib\MobilePhoneClassLib.csproj">
       <Project>{C57E06A6-2D31-4994-BC7D-5CF194BCC084}</Project>
       <Name>MobilePhoneClassLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobilePhoneSMS\MobilePhoneSMS.csproj">
+      <Project>{e2068243-9366-4095-aa6b-7291e43935e0}</Project>
+      <Name>MobilePhoneSMS</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
