@@ -58,20 +58,22 @@
     <Compile Include="OutputTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SMSEventTest.cs" />
-    <Compile Include="SMSFormatTest.cs" />
+    <Compile Include="SMSLowercaseFormatTest.cs" />
+    <Compile Include="SMSNoneFormatTest.cs" />
+    <Compile Include="SMSUppercaseFormatTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MobileFormWinForm\MobileFormWinForm.csproj">
+    <ProjectReference Include="..\MobileFormWinForm\SimCorp.IMS.MobileFormWinForm.csproj">
       <Project>{DB466475-11D2-4431-8B14-8A0AEAB4CB94}</Project>
-      <Name>MobileFormWinForm</Name>
+      <Name>SimCorp.IMS.MobileFormWinForm</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MobilePhoneClassLib\MobilePhoneClassLib.csproj">
+    <ProjectReference Include="..\MobilePhoneClassLib\SimCorp.IMS.MobilePhoneClassLib.csproj">
       <Project>{C57E06A6-2D31-4994-BC7D-5CF194BCC084}</Project>
-      <Name>MobilePhoneClassLib</Name>
+      <Name>SimCorp.IMS.MobilePhoneClassLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MobilePhoneSMS\MobilePhoneSMS.csproj">
+    <ProjectReference Include="..\MobilePhoneSMS\SimCorp.IMS.MobilePhoneSMS.csproj">
       <Project>{e2068243-9366-4095-aa6b-7291e43935e0}</Project>
-      <Name>MobilePhoneSMS</Name>
+      <Name>SimCorp.IMS.MobilePhoneSMS</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
